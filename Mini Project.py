@@ -5,9 +5,9 @@ def check_variable_declaration(statement):
     pattern = r'^\s*(int|float|char|double)\s+[a-zA-Z_][a-zA-Z0-9_]*\s*(=\s*[^;]+)?\s*;\s*$'
     
     if re.match(pattern, statement):  # Check if statement matches the pattern
-        return "✅ Valid variable declaration"
+        return " Valid variable declaration"
     else:
-        return "❌ Invalid variable declaration"
+        return " Invalid variable declaration"
 
 # Main program
 print("C Variable Declaration Syntax Analyzer")
